@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/boxicons.min.css">
+    <link rel="stylesheet" href="assets/css/meanmenu.min.css">
+    <link rel="stylesheet" href="assets/css/flaticon.css">
+    <link rel="stylesheet" href="assets/css/fancybox.min.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.min.css">
+    <link rel="stylesheet" href="assets/css/customStyle.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap">
+
+    <title> Flyt - Payment Method   </title>
+    <link rel="icon" type="image/png" href="assets/img/logo.png">
+
+</head>
+<body>
+
+
+<header class="header">
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="assets/images/logo.png">
+            </a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 p-3">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">How it works</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Find Jobs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Join Pur Community</a>
+                    </li>
+                </ul>
+                <div class="nave-left">
+
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 p-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Logout</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">
+                                <i class="fa fa-user fa-lg fa-circle" style="color:  #019773; border-radius: 50%;border: 1px solid grey;padding: 10px;"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<div class="container-fluid " id="profile-completion-old" style="box-shadow: 1px 0px 1px 1px rgba(0, 0, 0, 0.19); padding: 3rem 10rem 3rem 7rem;">
+
+    <div class="row justify-content-end" style="--bs-gutter-x: 0rem;">
+        <div class="col-9 rounded-pill h-50" style="background: #6CBA44">
+            <span style="color: #12493C; background: #12493C; border-radius: 10px; padding: 2px;" id="stregnthpadding">this is data</span>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid " id="profile-completion" style="box-shadow: 1px 0px 1px 1px rgba(0, 0, 0, 0.19); padding: 3rem 10rem 3rem 7rem; display: none">
+
+    <div class="row justify-content-end" style="--bs-gutter-x: 0rem;">
+        <div class="col-9 rounded-pill h-50" style="background: #6CBA44">
+            <span style="color: #12493C; background: #12493C; border-radius: 10px; padding: 2px;">this is data</span>
+        </div>
+    </div>
+</div>
+
+
+<section class="signup-4-section bg-white">
+    <div class="container-fluid">
+        <div class="row m-4 main-row ">
+
+            <div class="col-sm-3 left-content">
+                <div class="card border-radius-fifteen pb-5">
+                    <div class="card-body first-card-body email-page">
+                        <div class="row mt-5 mb-5  list-style">
+                            <div class="col-2 ">
+                                <i class="far fa-envelope text-start  active-icon-color "></i>
+                            </div>
+                            <div class="col-8">
+                                <a href="{{ route('user.profile.email') }}" class="profile-Sidebar"> <span class="active-color"> Email Verification</span> </a>
+                            </div>
+                            <div class="col-2 text-end">
+                                <i class="fas fa-check-circle text-end active-icon-color"></i>
+                            </div>
+                        </div>
+                        <div class="row mt-5 mb-5 list-style">
+                            <div class="col-2 ">
+                                <i class="fas fa-mobile-alt text-start  active-icon-color "></i>
+                            </div>
+                            <div class="col-8">
+                                <a href="{{ route('user.profile.mobile') }}" class="profile-Sidebar"> <span class="active-color"> Mobile Verification</span> </a>
+                            </div>
+                            <div class="col-2 text-end">
+                                <i class="fas fa-check-circle text-end active-icon-color"></i>
+                            </div>
+                        </div>
+                        <div class="row mt-5 mb-5 list-style">
+                            <div class="col-2 ">
+                                <i class="fa fa-user fa-lg text-start active-icon-color" ></i>
+                            </div>
+                            <div class="col-8">
+                                <a href="{{ route('user.profile.profilePicture') }}" class="profile-Sidebar"> <span class="active-color"> Profile Picture </span> </a>
+                            </div>
+                            <div class="col-2 text-end">
+                                <i class="fas fa-check-circle text-end active-icon-color"> </i>
+                            </div>
+                        </div>
+                        <div class="row mt-5 mb-5 list-style">
+                            <div class="col-2 ">
+                                <i class="fa fa-address-card text-start active-icon-color" ></i>
+                            </div>
+                            <div class="col-8">
+                                <a href="{{ route('user.profile.paymentMethod') }}" class="profile-Sidebar"> <span class="active-color" > Payment Method </span> </a>
+                            </div>
+
+                            <div class="col-2 text-end">
+                                <i class="fas fa-check-circle text-end "></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-9 p-2 right-content">
+
+                <div class="row ps-4 parent-row">
+                    <div class="col-md-11">
+                        <img src="assets/images/paymentMethod.png" style="margin-top: -75px; width: 102%;">
+                    </div>
+                    <form action="#" method="POST">
+                        <div class="col-md-12 border-radius-fifteen email-page-content justify-content-center email-input pt-5 pb-5 text-center">
+                            <button type="button" id="addPymentMethod" class="btn standard-button-style pt-3 pb-3 text-white" style="margin-top: -150px;"> Add Payment Method</button>
+<!--                           payments methods-->
+                            <div class="row justify-content-center" id="methods">
+                                <div class="col-md-3 text-center">
+                                    <div class="card" type="button" id="payPal">
+                                        <div class="card-body text-center m-3 ">
+                                              <a href="javascript:void(0)" >
+                                                 <img src="assets/images/paypal.png">
+                                                </a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-md-3 text-center">
+                                    <div class="card" type="button" id="Mockup">
+                                        <div class="card-body text-center ">
+                                            <a href="javascript:void(0)">
+                                                <img src="assets/images/Mockup.png">
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-md-3 text-center">
+                                    <div class="card" type="button" id="building">
+                                        <div class="card-body text-center m-3 ">
+                                            <a href="javascript:void(0)">
+                                                <img src="assets/images/bank-building.png">
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+<!--                            debit credit form  -->
+                            <div id="credit_card_form" class="row justify-content-between">
+                                <div class="col-md-12   fw-bold fs-6 text-start">
+                                    <p>
+                                        Add a credit or Debit card
+                                    </p>
+                                </div>
+                                <div class="col-md-5 text-start">
+                                    <div class="form-group position-relative">
+                                        <p class="fw-bold font-13 text-start text-secondary">
+                                            First Name
+                                        </p>
+                                        <input class="form-control input-lg ps-3 fw-normal font-13 pt-3 pb-3" type="text" name="company_name"    required="" autocomplete="none">
+                                    </div>
+                                </div>
+                                <div class="col-md-5 text-start">
+                                    <div class="form-group position-relative">
+                                        <p class="fw-bold font-13 text-start text-secondary">
+                                            First Name
+                                        </p>
+                                        <input class="form-control input-lg ps-3 fw-normal font-13 pt-3 pb-3" type="text" name="company_name"    required="" autocomplete="none">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12 text-start mt-4">
+                                    <div class="form-group position-relative">
+                                        <p class="font-13 text-start text-secondary">
+                                            Card Number
+                                        </p>
+                                        <img src="assets/images/credit-card.png" style="top: 0; right: 20px; position: absolute;">
+                                        <input class="form-control input-lg ps-3 fw-normal font-13 pt-3 pb-3" type="text" name="company_name"    required="" autocomplete="none">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 text-start mt-4">
+                                    <div class="form-group position-relative">
+                                        <p class="font-13 text-start text-secondary">
+                                            Expiry Date
+                                        </p>
+                                        <input class="form-control input-lg ps-3 fw-normal font-13 pt-3 pb-3" type="text" name="company_name"  placeholder="MM"  required="" autocomplete="none">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 text-start mt-4">
+                                    <div class="form-group position-relative">
+                                        <p class="font-13 text-start text-secondary">
+                                            <span style="visibility: hidden"> Expiry Date </span>
+                                        </p>
+                                        <input class="form-control input-lg ps-3 fw-normal font-13 pt-3 pb-3" type="text" name="company_name" placeholder="yy"   required="" autocomplete="none">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12 text-start mt-4">
+                                    <div class="form-group position-relative">
+                                        <p class="font-13 text-start text-secondary">
+                                            Security Code
+                                        </p>
+                                        <input class="form-control input-lg ps-3 fw-normal font-13 pt-4 pb-4" type="text" name="company_name"    required="" autocomplete="none">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 text-start mt-4">
+                                    <div class="form-group position-relative">
+                                        <p class="font-13 text-start text-secondary">
+                                            Country
+                                        </p>
+                                        <i class="fa fa-caret-down fa-lg position-absolute" style="top: 55px;right: 1rem;font-size: 40px;color: #019773;"></i>
+                                        <select class="form-control input-lg ps-3 fw-normal font-13 pt-3 pb-3"  name="company_name">
+                                                <option value="" selected disabled> Select Country</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 text-start mt-4">
+                                    <div class="form-group position-relative">
+                                        <p class="fw-bold font-13 text-start text-secondary">
+                                            City
+                                        </p>
+                                        <input class="form-control input-lg ps-3 fw-normal font-13 pt-3 pb-3" type="text" name="company_name"    required="" autocomplete="none">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4  mt-4 text-start">
+                                    <div class="form-group position-relative">
+                                        <p class="fw-bold font-13 text-start text-secondary">
+                                            Address
+                                        </p>
+                                        <input class="form-control input-lg ps-3 fw-normal font-13 pt-3 pb-3" type="text" name="Address"    required="" autocomplete="none">
+                                    </div>
+                                </div>
+                                <div class="col-md-4   mt-4 text-start">
+                                    <div class="form-group position-relative">
+                                        <p class="fw-bold font-13 text-start text-secondary">
+                                            Country State
+                                        </p>
+                                        <input class="form-control input-lg ps-3 fw-normal font-13 pt-3 pb-3" type="text" name="company_name"    required="" autocomplete="none">
+                                    </div>
+                                </div>
+                                <div class="col-md-4  mt-4 text-start">
+                                    <div class="form-group position-relative">
+                                        <p class="fw-bold font-13 text-start text-secondary">
+                                            Zip Code
+                                        </p>
+                                        <input class="form-control input-lg ps-3 fw-normal font-13 pt-3 pb-3" type="text" name="company_name"    required="" autocomplete="none">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12 mt-5">
+                                    <button class="btn standard-button-style text-white" type="submit"> Add Card</button>
+                                    <a href="#" class="ms-5 fs-6 standard-color"> Cancel</a>
+                                </div>
+                            </div>
+
+<!--                            success messages div-->
+                            <div class="row">
+                                <div class="col-md-12 text-start p-2 rounded-1" style="background: #E9FFE2">
+                                    <i class="fas fa-check-circle standard-color-2 font-13 ms-2 pt-2 pb-2"></i>
+                                    <span class="ms-2 pt-2 pb-2 ps-3 fw-normal font-13"> Success </span>
+                                </div>
+                            </div>
+
+                            <div class="row mt-4">
+                                <div class="col-md-12 text-start p-2 rounded-1" style="background: #E9FFE2">
+                                    <i class="fas fa-check-circle standard-color-2 font-13 ms-2 pt-2 pb-2"></i>
+                                    <span class="ms-2 pt-2 pb-2 ps-3 fw-normal font-13"> Your Paypal (FLYTuser@gmail.com) is now your primary payment method.  </span>
+                                </div>
+                            </div>
+
+
+<!--                            index data-->
+                            <div class="row justify-content-between">
+
+                                <div class="col-md-12">
+                                    <table class="table border-0">
+                                        <thead>
+                                        <tr  class="fs-6" style="border-style: hidden">
+                                            <th class="text-start col-6">Payment Method </th>
+                                            <th>Actions</th>
+                                            <th>Auto pay status</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr class="font-13 fw-normal" style="border-style: hidden">
+                                            <td class="text-start">
+                                                <img src="assets/images/paypal.png" width="100" height="38">
+                                                <span class="ms-5"> <b> Paypal-</b>FLYTuser@gmail.com </span>
+                                            </td>
+                                            <td><a href="#" class="standard-color fw-bold"> Remove</a></td>
+                                            <td>Primary</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-12 text-start feed-news-content email-verify-bottom">
+                            <div class="card-body first-card-body">
+                                <div class="row p-0 justify-content-center">
+                                    <div class="col-md-6 pb-2">
+                                        <p class="project-heading p-3 fs-6 ">
+                                            <a class="fs-6 " href="javascript:void(0)"> Back</a>
+                                        </p>
+                                    </div>
+                                    <div class="col-md-6 ps-4 pb-2 text-end">
+                                        <a href="#" type="submit" class="btn standard-button-style text-white ps-5 fs-6 pe-5"> Next </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<script type="text/javascript">
+
+
+    $(document).ready(function(){
+
+        $('#methods').hide();
+        $('#credit_card_form').hide();
+
+        $('#payPal').click(function(){
+
+            $('#credit_card_form').hide();
+            $('#methods').hide();
+            $('#credit_card_form').show();
+        });
+
+        $('#Mockup').click(function(){
+
+            $('#credit_card_form').hide();
+            $('#methods').hide();
+            $('#credit_card_form').show();
+        });
+
+        $('#building').click(function(){
+
+            $('#credit_card_form').hide();
+            $('#methods').hide();
+            $('#credit_card_form').show();
+        });
+
+        $('#addPymentMethod').click(function(){
+
+            $('#methods').show();
+            $('#credit_card_form').hide();
+        });
+
+
+    });
+
+
+</script>
+
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/popper.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/owl.carousel.min.js"></script>
+<script src="assets/js/magnific-popup.min.js"></script>
+<script src="assets/js/parallax.min.js"></script>
+<script src="assets/js/meanmenu.min.js"></script>
+<script src="assets/js/isotope.pkgd.min.js"></script>
+<script src="assets/js/cursor.min.js"></script>
+<script src="assets/js/fancybox.min.js"></script>
+<script src="assets/js/wow.min.js"></script>
+<script src="assets/js/form-validator.min.js"></script>
+<script src="assets/js/contact-form-script.js"></script>
+<script src="assets/js/ajaxchimp.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

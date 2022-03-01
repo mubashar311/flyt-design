@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/boxicons.min.css">
+    <link rel="stylesheet" href="assets/css/meanmenu.min.css">
+    <link rel="stylesheet" href="assets/css/flaticon.css">
+    <link rel="stylesheet" href="assets/css/fancybox.min.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.min.css">
+    <link rel="stylesheet" href="assets/css/customStyle.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+    <title> Flyt - Project Payment Method</title>
+    <link rel="icon" type="image/png" href="assets/img/logo.png">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+</head>
+<body>
+
+<div class="container-fluid " style="background-image: url(assets/images/Postproject.png);z-index: 0; background-repeat: no-repeat; height: 400px;">
+    <div class="row justify-content-center">
+        <div class="col-md-10">
+            <header class="header">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <div class="container-fluid">
+                        <a class="navbar-brand m-5" href="#">
+                            <img src="assets/images/white-logo.png" height="40" width="100">
+                        </a>
+                    </div>
+                </nav>
+            </header>
+        </div>
+    </div>
+
+    <div class="container" >
+        <div class="row">
+            <div class="col-md-12">
+                <p class="fs-2 text-white"> <img src="assets/images/Group-5.png"> <span style="margin-left: -110px;">Tell us what you need done</span> </p>
+            </div>
+            <div class="col-md-12">
+               <p class="fs-6 text-white">
+                   <button class="btn standard-button-style-3 text-white fw-bold" id="addPaymentMethod" type="button"> Add Payment Method</button>
+               </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="container shadow bg-light" style="margin-top: -80px;">
+
+            <!--   success messages div-->
+        <div id="indexData">
+            <div class="row mt-4 p-5">
+                <div class="col-md-12 text-start p-2 rounded-1" style="background: #E9FFE2; border: 1px solid #2FD200;">
+                    <i class="fas fa-check-circle standard-color-2 font-13 ms-2 pt-2 pb-2"></i>
+                    <span class="ms-2 pt-2 pb-2 ps-3 fw-normal font-13"> Success </span>
+                </div>
+            </div>
+
+            <div class="row ps-5 pe-5 pb-5">
+                <div class="col-md-12 text-start p-2 rounded-1" style="background: #E9FFE2; border: 1px solid #2FD200;">
+                    <i class="fas fa-check-circle standard-color-2 font-13 ms-2 pt-2 pb-2"></i>
+                    <span class="ms-2 pt-2 pb-2 ps-3 fw-normal font-13"> Your Paypal (FLYTuser@gmail.com) is now your primary payment method.  </span>
+                </div>
+            </div>
+            <div class="row p-5">
+                <div class="col-md-12">
+                    <table class="table border-0 table-hover table-responsive-md">
+                        <thead>
+                        <tr  class="fs-6" style="border-style: hidden">
+                            <th  class="text-start col-6">Payment Method </th>
+                            <th class="text-start col-md-3">Actions</th>
+                            <th class="text-start ">Auto pay status</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr class="font-13 fw-normal shadow" style="border-style: hidden; height: 50px;">
+                            <td class="text-start"></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-md-12 mt-4">
+                    <a class="btn fw-bold standard-color" href="#">Back</a>
+                </div>
+            </div>
+        </div>
+
+<!--        credit card add form-->
+        <div id="credit_card_form" class="row justify-content-between p-5">
+            <div class="col-md-12   fw-bold fs-6 text-start">
+                <p>
+                    Add a credit or Debit card
+                </p>
+            </div>
+            <div class="col-md-5 text-start">
+                <div class="form-group position-relative">
+                    <p class="fw-bold font-13 text-start text-secondary">
+                        First Name
+                    </p>
+                    <input class="form-control input-lg ps-3 fw-normal font-13 pt-3 pb-3" type="text" name="company_name"    required="" autocomplete="none">
+                </div>
+            </div>
+            <div class="col-md-5 text-start">
+                <div class="form-group position-relative">
+                    <p class="fw-bold font-13 text-start text-secondary">
+                        First Name
+                    </p>
+                    <input class="form-control input-lg ps-3 fw-normal font-13 pt-3 pb-3" type="text" name="company_name"    required="" autocomplete="none">
+                </div>
+            </div>
+
+            <div class="col-md-12 text-start mt-4">
+                <div class="form-group position-relative">
+                    <p class="font-13 text-start text-secondary">
+                        Card Number
+                    </p>
+                    <img src="assets/images/credit-card.png" style="top: 0; right: 20px; position: absolute;">
+                    <input class="form-control input-lg ps-3 fw-normal font-13 pt-3 pb-3" type="text" name="company_name"    required="" autocomplete="none">
+                </div>
+            </div>
+
+            <div class="col-md-6 text-start mt-4">
+                <div class="form-group position-relative">
+                    <p class="font-13 text-start text-secondary">
+                        Expiry Date
+                    </p>
+                    <input class="form-control input-lg ps-3 fw-normal font-13 pt-3 pb-3" type="text" name="company_name"  placeholder="MM"  required="" autocomplete="none">
+                </div>
+            </div>
+            <div class="col-md-6 text-start mt-4">
+                <div class="form-group position-relative">
+                    <p class="font-13 text-start text-secondary">
+                        <span style="visibility: hidden"> Expiry Date </span>
+                    </p>
+                    <input class="form-control input-lg ps-3 fw-normal font-13 pt-3 pb-3" type="text" name="company_name" placeholder="yy"   required="" autocomplete="none">
+                </div>
+            </div>
+
+            <div class="col-md-12 text-start mt-4">
+                <div class="form-group position-relative">
+                    <p class="font-13 text-start text-secondary">
+                        Security Code
+                    </p>
+                    <input class="form-control input-lg ps-3 fw-normal font-13 pt-4 pb-4" type="text" name="company_name"    required="" autocomplete="none">
+                </div>
+            </div>
+
+            <div class="col-md-6 text-start mt-4">
+                <div class="form-group position-relative">
+                    <p class="font-13 text-start text-secondary">
+                        Country
+                    </p>
+                    <i class="fa fa-caret-down fa-lg position-absolute" style="top: 55px;right: 1rem;font-size: 40px;color: #019773;"></i>
+                    <select class="form-control input-lg ps-3 fw-normal font-13 pt-3 pb-3"  name="company_name">
+                        <option value="" selected disabled> Select Country</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-md-6 text-start mt-4">
+                <div class="form-group position-relative">
+                    <p class="fw-bold font-13 text-start text-secondary">
+                        City
+                    </p>
+                    <input class="form-control input-lg ps-3 fw-normal font-13 pt-3 pb-3" type="text" name="company_name"    required="" autocomplete="none">
+                </div>
+            </div>
+
+            <div class="col-md-4  mt-4 text-start">
+                <div class="form-group position-relative">
+                    <p class="fw-bold font-13 text-start text-secondary">
+                        Address
+                    </p>
+                    <input class="form-control input-lg ps-3 fw-normal font-13 pt-3 pb-3" type="text" name="Address"    required="" autocomplete="none">
+                </div>
+            </div>
+            <div class="col-md-4   mt-4 text-start">
+                <div class="form-group position-relative">
+                    <p class="fw-bold font-13 text-start text-secondary">
+                        Country State
+                    </p>
+                    <input class="form-control input-lg ps-3 fw-normal font-13 pt-3 pb-3" type="text" name="company_name"    required="" autocomplete="none">
+                </div>
+            </div>
+            <div class="col-md-4  mt-4 text-start">
+                <div class="form-group position-relative">
+                    <p class="fw-bold font-13 text-start text-secondary">
+                        Zip Code
+                    </p>
+                    <input class="form-control input-lg ps-3 fw-normal font-13 pt-3 pb-3" type="text" name="company_name"    required="" autocomplete="none">
+                </div>
+            </div>
+
+            <div class="col-md-12 mt-5 text-center">
+                <button class="btn standard-button-style text-white" type="submit"> Add Card</button>
+                <a href="javascript:void(0)" class="ms-5 fs-6 standard-color" id="cancel"> Cancel</a>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/popper.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/owl.carousel.min.js"></script>
+<script src="assets/js/magnific-popup.min.js"></script>
+<script src="assets/js/parallax.min.js"></script>
+<script src="assets/js/meanmenu.min.js"></script>
+<script src="assets/js/isotope.pkgd.min.js"></script>
+<script src="assets/js/cursor.min.js"></script>
+<script src="assets/js/fancybox.min.js"></script>
+<script src="assets/js/wow.min.js"></script>
+<script src="assets/js/form-validator.min.js"></script>
+<script src="assets/js/contact-form-script.js"></script>
+<script src="assets/js/ajaxchimp.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+<script type="text/javascript">
+    $(document).ready(function(){
+
+        $('#credit_card_form').hide();
+
+        $( "#addPaymentMethod" ).click(function() {
+            $('#exampleModal').modal('show');
+
+        });
+
+        $('#cancel').click(function(){
+            location.reload();
+        });
+
+        // $('#payPal').click(function(){
+        //
+        //     $('#credit_card_form').hide();
+        //     $('#indexData').hide();
+        //     $('#exampleModal').modal('hide');
+        //     $('#credit_card_form').show();
+        // });
+
+        $( ".close-modal" ).click(function() {
+
+            $('#exampleModal').modal('hide');
+            $('#exampleModal2').modal('hide');
+
+        });
+
+            $('.addAttr').click(function() {
+
+            var id = $(this).data('id');
+            var method = $(this).data('method');
+                $('#credit_card_form').hide();
+                $('#indexData').hide();
+                $('#exampleModal').modal('hide');
+                $('#credit_card_form').show();
+            // $('#id').val(id);
+            // $('#institute').val(institute);
+            // $('#degree').val(degree);
+            // $('#study_type').val(study_type);
+            // $('#passing_year').val(passing_year);
+        });
+
+    });
+
+
+</script>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-0" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog  modal-dialog-centered modal-lg">
+        <div class="modal-content only-shadow border-0">
+            <div class="modal-header border-0">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row ps-2 justify-content-center">
+                    <div class="col-md-10">
+                        <p class="fs-5">  <img src="assets/images/Group-5.png" height="60" width="100">
+                            <span style="margin-left: -58px;" class="standard-color-3">
+                                <span class="fw-normal standard-color-without-font-family-3" > Add</span> Billing Method
+                            </span>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center pb-4">
+                    <div class="col-md-3 text-center">
+                        <div class="card" type="button" id="payPal">
+                            <div class="card-body text-center m-3 ">
+                                <a href="javascript:void(0)" class="addAttr" data-target="#credit_card_form"
+                                   data-id="1" data-method="payPal">
+                                    <img src="assets/images/paypal.png" width="100" height="38">
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-3 text-center pb-4">
+                        <div class="card" type="button" id="Mockup">
+                            <div class="card-body text-center ">
+                                <a href="javascript:void(0)" class="addAttr" data-target="#credit_card_form" data-id="2" data-method="Mockup">
+                                    <img src="assets/images/Mockup.png">
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-3 text-center pb-4">
+                        <div class="card" type="button" id="building">
+                            <div class="card-body text-center m-3 ">
+                                <a href="javascript:void(0)" class="addAttr" data-target="#credit_card_form" data-id="3" data-method="bank">
+                                    <img src="assets/images/bank-building.png">
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</html>
